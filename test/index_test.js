@@ -23,7 +23,11 @@ describe('Calculate', () => {
         assert.equal(result, expectedResult);
     })
     it('tests if the edge case 0! is equal to 1', () => {
+        const inputNumber = 0;
+        const expectedResult = 1;
 
+        const result = Calculate.factorial(inputNumber);
+        assert.equal(result, expectedResult);        
     })
   });
 });
