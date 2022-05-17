@@ -3,11 +3,11 @@ var Calculate =  require('../index.js')
 
 describe('Calculate', () => {
   describe('.factorial', () => {
-      afterEach(() => {
-          delete inputNumber;
-          delete expectedResult;
-          delete result;
-      })
+    afterEach(() => {
+        delete inputNumber;
+        delete expectedResult;
+        delete result;
+    })
     it('tests if the output of 5! is equal to 120', () => {
         const inputNumber = 5;
         const expectedResult = 120;
@@ -21,6 +21,9 @@ describe('Calculate', () => {
 
         const result = Calculate.factorial(inputNumber);
         assert.equal(result, expectedResult);
+    })
+    it('tests if the edge case 0! is equal to 1', () => {
+
     })
   });
 });
